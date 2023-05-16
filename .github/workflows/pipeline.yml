@@ -25,8 +25,12 @@ jobs:
       run: ant -noinput -buildfile build.xml
 #Compilando com Java
     - name: Compilar o projeto
-      run: javac -cp src Main.java 
+      run: |
+        cd src
+        javac -cp src Main.java 
       
 #Executar o Projeto
     - name: Executando o projeto
-      run: java -cp . Main
+      run: |
+        cd src 
+        java -cp . Main
