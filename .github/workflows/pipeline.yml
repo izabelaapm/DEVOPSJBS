@@ -38,7 +38,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6    
       name: Deploy no Docker 
       with:
-        image: nisflei/app_f
+        image: izabelaapm10b/app_f
         tags: latest
         registry: docker.io
         dockerfile: dockerfile
